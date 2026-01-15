@@ -1,0 +1,39 @@
+name: loca_student
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  flutter_bloc: ^9.1.1
+  parse_server_sdk_flutter: ^9.0.0
+  equatable: ^2.0.7
+  shared_preferences: ^2.2.3
+  package_info_plus: ^8.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  icons_launcher: ^3.0.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - content/
+
+icons_launcher:
+  image_path: "content/app_icon.png"
+  platforms:
+    android:
+      enable: true    
+    ios:
+      enable: true
+
+dependency_overrides:
+  package_info_plus: ^5.0.1
